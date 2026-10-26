@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Daybreak</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+  <header><div><h1>Daybreak</h1><p>YouTube, through your own connection.</p></div><span id="state" role="status">Starting</span></header>
+  <label class="toggle"><span>Bypass VPN for YouTube</span><input id="enabled" type="checkbox" role="switch"></label>
+  <p id="detail" aria-live="polite">Checking the helper…</p>
+  <button id="retry" type="button">Reconnect helper</button>
+  <details><summary>Included domains</summary><ul id="domains"></ul></details>
+  <footer>Other websites follow your existing network route. After changing this setting, reload YouTube; existing connections may keep their old route.</footer>
+  <script src="popup.js"></script>
+</body>
+</html>

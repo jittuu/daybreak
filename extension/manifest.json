@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Daybreak",
+  "homepage_url": "https://github.com/jittuu/daybreak",
+  "version": "0.1.0",
+  "description": "Send YouTube through your Mac's physical connection while other traffic follows your existing VPN route.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "daybreak@jittuu.github.io",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  },
+  "permissions": [
+    "proxy", "nativeMessaging", "storage",
+    "*://*.youtube.com/*", "*://*.youtu.be/*", "*://*.googlevideo.com/*",
+    "*://*.ytimg.com/*", "*://*.youtube-nocookie.com/*", "*://*.youtubei.googleapis.com/*"
+  ],
+  "background": { "scripts": ["policy.js", "native-client.js", "background.js"], "persistent": true },
+  "browser_action": { "default_title": "Daybreak", "default_popup": "popup.html" },
+  "content_security_policy": "script-src 'self'; object-src 'none'"
+}

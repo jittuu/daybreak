@@ -1,0 +1,11 @@
+.build/
+.swiftpm/
+dist/
+.DS_Store
+*.log
+.local-validation/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example

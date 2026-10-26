@@ -1,0 +1,16 @@
+:root { color-scheme: light dark; font: 13px/1.5 system-ui, sans-serif; }
+body { width: 320px; margin: 0; padding: 20px; background: light-dark(#faf9f6, #1b1d1b); color: light-dark(#222b25, #e4e9e3); }
+header { display: flex; align-items: flex-start; gap: 16px; justify-content: space-between; }
+h1 { font-size: 19px; margin: 0; font-weight: 650; letter-spacing: -.4px; }
+p { margin: 5px 0 16px; }
+header p, footer { opacity: .65; font-size: 12px; }
+#state { border: 1px solid #7e968366; border-radius: 20px; padding: 2px 9px; white-space: nowrap; font-size: 11px; }
+.toggle { display: flex; justify-content: space-between; align-items: center; border-block: 1px solid #7e968333; padding: 15px 0; margin: 8px 0 12px; cursor: pointer; }
+input { accent-color: #458c6b; width: 18px; height: 18px; }
+#detail { min-height: 40px; }
+button { font: inherit; background: #458c6b; color: white; border: 0; border-radius: 7px; padding: 8px 12px; cursor: pointer; }
+button:disabled { opacity: .5; cursor: wait; }
+details { margin-top: 20px; font-size: 12px; }
+summary { cursor: pointer; }
+ul { padding-left: 18px; font-family: ui-monospace, monospace; font-size: 11px; }
+footer { margin-top: 20px; }
